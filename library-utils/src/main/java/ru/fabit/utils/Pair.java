@@ -1,4 +1,4 @@
-package ru.parking.utils;
+package ru.fabit.utils;
 
 public class Pair<F, S> {
 

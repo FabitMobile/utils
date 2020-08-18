@@ -1,4 +1,4 @@
-package ru.parking.utils;
+package ru.fabit.utils;
 
 import java.util.ArrayList;
 import java.util.List;

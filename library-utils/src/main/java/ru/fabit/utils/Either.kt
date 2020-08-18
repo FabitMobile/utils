@@ -1,4 +1,4 @@
-package ru.parking.utils
+package ru.fabit.utils
 
 sealed class Either<out A, out B> {
 
