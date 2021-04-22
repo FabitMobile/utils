@@ -26,7 +26,7 @@ public class StringHelper {
         }
 
         List<Pair<Integer, Integer>> occurrencesStartEndPositionsPairs = new ArrayList<>();
-        occurrencesStartEndPositionsPairs.add(new Pair<>(startIndex, startIndex + substring.length()));
+
         while (startIndex >= 0) {
             occurrencesStartEndPositionsPairs.add(new Pair<>(startIndex, startIndex + substring.length()));
             startIndex = target.indexOf(substring, startIndex + 1);
