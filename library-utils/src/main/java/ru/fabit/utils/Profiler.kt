@@ -2,21 +2,21 @@ package ru.fabit.utils
 
 import java.util.concurrent.atomic.AtomicLong
 
-class Profiler(private val printResult: (string: String) -> Unit) {
+class Profiler(private val printResult: (string: String) -> Unit, private val timeSource: TimeSource) {
 
     private val time: AtomicLong = AtomicLong()
 
     fun <T> analysis(code: () -> T): T {
-        val start = System.currentTimeMillis()
+        val start = timeSource.currentSystemTime()
         val result: T = code()
-        time.addAndGet(System.currentTimeMillis() - start)
+        time.addAndGet(timeSource.currentSystemTime() - start)
         return result
     }
 
     fun analysis(code: () -> Unit) {
-        val start = System.currentTimeMillis()
+        val start = timeSource.currentSystemTime()
         code()
-        time.addAndGet(System.currentTimeMillis() - start)
+        time.addAndGet(timeSource.currentSystemTime() - start)
     }
 
     fun print() {
