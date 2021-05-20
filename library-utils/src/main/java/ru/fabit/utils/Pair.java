@@ -1,5 +1,6 @@
 package ru.fabit.utils;
 
+@Deprecated
 public class Pair<F, S> {
 
     private final F first;
