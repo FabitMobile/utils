@@ -2,7 +2,7 @@ package ru.fabit.utils
 
 import kotlin.math.abs
 
-class ClickManager(private val sampleStepMillis: Long = 500) {
+class ThrottleHelper(private val sampleStepMillis: Long = 500) {
 
     private var lastCheck = 0L
 
