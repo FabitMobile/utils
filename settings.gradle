@@ -1,2 +1,0 @@
-include ':library-utils'
-rootProject.name = "utils"
