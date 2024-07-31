@@ -33,8 +33,7 @@ android {
 }
 
 dependencies {
-    api(project(":utils"))
-
+    api(project(":core-utils"))
     implementation(libs.core.ktx)
     implementation(libs.androidx.vectordrawable)
     implementation(libs.jodaTime)

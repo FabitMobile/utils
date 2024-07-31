@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "utils"
 include(":android-utils")
-include(":utils")
+include(":core-utils")
